@@ -1,7 +1,11 @@
+#include <stdio.h>
+#include "accountManagment.h"
+
 
 void direct(int option){
     switch(option){
         case 1:
+        openAccount();
             break;
         case 2:
             break;
@@ -16,4 +20,6 @@ void direct(int option){
         case 7:
             break;
     }
+            printf("oi");
+
 }
