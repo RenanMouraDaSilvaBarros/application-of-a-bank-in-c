@@ -20,6 +20,5 @@ void direct(int option){
         case 7:
             break;
     }
-            printf("oi");
 
 }
