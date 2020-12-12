@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "currentAccount.h"
+#include "menu.h"
 
 int main(){
-    printf("Hello world");
-   
+    menu();
 }
