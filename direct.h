@@ -1,5 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 #include "accountManagment.h"
+
+
 
 void direct(int option, CurrentAccount *allAccounts)
 {
@@ -12,6 +16,7 @@ void direct(int option, CurrentAccount *allAccounts)
         deposit(allAccounts);
         break;
     case 3:
+        toWithdraw(allAccounts);
         break;
     case 4:
         break;
@@ -21,6 +26,8 @@ void direct(int option, CurrentAccount *allAccounts)
         accountsLists(allAccounts);
         break;
     case 7:
+        printf("Saindo.....\n");
+        exit(1);
         break;
     }
 }

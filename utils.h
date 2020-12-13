@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 char *generateaAccount()
 {
   char *account = (char *)malloc(7 * sizeof(char));
@@ -28,6 +29,7 @@ void clear()
 
   system("clear || cls");
 }
+
 void pause()
 {
   printf("insire qualquer tecla para continuar...\n");
@@ -59,6 +61,5 @@ bool accountIsValidate(char *account)
     return true;
   }
 
-  printf("Entrdada INVALIDA!\ninsira uma conta válida\n");
   return false;
 }

@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
-#include "menu.h"
 #include "direct.h"
+#include "menu.h"
+
 
 
 int main()
