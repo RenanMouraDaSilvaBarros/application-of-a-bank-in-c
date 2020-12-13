@@ -3,6 +3,7 @@
 #include <string.h>
 
 
+
 char *generateaAccount()
 {
   char *account = (char *)malloc(7 * sizeof(char));

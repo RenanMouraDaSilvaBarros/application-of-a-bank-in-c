@@ -5,6 +5,7 @@
 
 
 
+
 int main()
 {
    	CurrentAccount *allAccounts = (CurrentAccount*)malloc(500 * sizeof(CurrentAccount));
@@ -16,6 +17,7 @@ int main()
     {
         menu();
         scanf("%d", &option);
+        clear();
         direct(option, allAccounts);
     }
  

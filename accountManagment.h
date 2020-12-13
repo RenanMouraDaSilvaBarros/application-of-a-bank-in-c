@@ -61,6 +61,7 @@ int search(CurrentAccount *allAccounts)
             printf("INVÁLIDO\ndigite (2) para cancelar operacao\t");
             printf("digite (outra tecla) para insira novamente\n");
             scanf("%d", &next);
+            getchar();
             clear();
             if (next == 2)
             {
