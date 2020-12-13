@@ -6,7 +6,7 @@
 
 int main()
 {
-   	CurrentAccount *allAccounts = (CurrentAccount*)malloc(500 * sizeof(CurrentAccount));// alocar 500 contatos para agenda
+   	CurrentAccount *allAccounts = (CurrentAccount*)malloc(500 * sizeof(CurrentAccount));
 
     bool isActive = true;
     int option;

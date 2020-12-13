@@ -20,7 +20,6 @@ void accountsLists(CurrentAccount *allAccounts)
 void openAccount(CurrentAccount *allAccounts)
 {
     printf("===============ABRIR CONTA===============\n");
-    printf("size: %d", size);
     printf("nome: ");
     scanf("%s", allAccounts[size].name);
     printf("agencia: ");
@@ -28,11 +27,14 @@ void openAccount(CurrentAccount *allAccounts)
 
     allAccounts[size].account = generateaAccount();
     allAccounts[size].balance = 0;
+  
+    clear();
+    printf("\nSEUS DADOS SÂO: \n");
+    toString(allAccounts[size]);
+    pause();
+    clear();
+
     size++;
-
-    //toString(allAccounts[size]);
-   //accountsLists();
     
-
     getchar();
 }
