@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #include "accountManagment.h"
-
-
 
 void direct(int option, CurrentAccount *allAccounts)
 {
@@ -19,6 +16,7 @@ void direct(int option, CurrentAccount *allAccounts)
         toWithdraw(allAccounts);
         break;
     case 4:
+        checkBalance(allAccounts);
         break;
     case 5:
         break;

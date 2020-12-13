@@ -177,3 +177,21 @@ void toWithdraw(CurrentAccount *allAccounts)
         clear();
     }
 }
+
+void checkBalance(CurrentAccount *allAccounts)
+{
+
+    int index = search(allAccounts);
+
+    if (index != -1)
+    {
+        pause();
+        clear();
+        double toWithdraw;
+
+        printf("saldo é %0.2lf\n", allAccounts[index].balance);
+
+        pause();
+        clear();
+    }
+}

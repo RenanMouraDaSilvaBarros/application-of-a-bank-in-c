@@ -21,6 +21,6 @@ void toString(CurrentAccount account)
     printf("nome: %s\n", account.name);
     printf("agencia: %s\n", account.agency);
     printf("conta: %s\n", account.account);
-    printf("saldo: %.2lf\n", account.balance);
+    //printf("saldo: %.2lf\n", account.balance);
     printf("==============================================\n");
 }
