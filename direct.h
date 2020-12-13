@@ -19,6 +19,7 @@ void direct(int option, CurrentAccount *allAccounts)
         checkBalance(allAccounts);
         break;
     case 5:
+    transfer(allAccounts);
         break;
     case 6:
         accountsLists(allAccounts);

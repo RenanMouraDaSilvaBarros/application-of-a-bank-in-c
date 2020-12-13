@@ -182,7 +182,6 @@ void checkBalance(CurrentAccount *allAccounts)
 {
 
     int index = search(allAccounts);
-
     if (index != -1)
     {
         pause();
@@ -194,4 +193,45 @@ void checkBalance(CurrentAccount *allAccounts)
         pause();
         clear();
     }
+}
+
+void transfer(CurrentAccount *allAccounts)
+{
+  
+
+    printf("Conta origen: \n");
+    int indexOrigin = search(allAccounts);
+    int indexDestiny;
+
+    if (indexOrigin != -1 && (allAccounts[indexOrigin].balance > 0))
+    {
+        printf("Conta destino: ");
+
+        indexDestiny = search(allAccounts);
+
+        if (indexOrigin != -1)
+        {
+            double value;
+            do
+            {
+                pause();
+                clear();
+                printf("o valor a transferir da conta de origem: ");
+                scanf("%lf", &value);
+            } while (value <= 0);
+
+            allAccounts[indexOrigin].balance -= value;
+            allAccounts[indexDestiny].balance += value;
+            printf("transferencia de %0.2lf concluida com sucesso!\n", value);
+        }
+    }
+    else
+    {
+        if (indexOrigin != -1 && allAccounts[indexOrigin].balance == 0)
+        {
+            printf("Conta não possue saldo!\n");
+        }
+    }
+    pause();
+    clear();
 }

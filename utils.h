@@ -33,7 +33,7 @@ void clear()
 
 void pause()
 {
-  printf("insire qualquer tecla para continuar...\n");
+  printf("digite qualquer tecla para continuar...\ntecla: ");
   int c;
   scanf("%d", &c);
 }
