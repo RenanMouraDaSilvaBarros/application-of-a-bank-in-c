@@ -34,3 +34,31 @@ void pause()
   int c;
   scanf("%d", &c);
 }
+
+void readString(char *string, int tam)
+{
+
+  int i;
+  for (i = 0; i < tam; i++)
+  {
+
+    if (string[i] == '\n')
+    {
+      string[i] = '\0';
+    }
+  }
+}
+
+bool accountIsValidate(char *account)
+{
+  int i;
+
+  if ((strlen(account) == 7) && (account[5] == '-'))
+  {
+    
+    return true;
+  }
+
+  printf("Entrdada INVALIDA!\ninsira uma conta válida\n");
+  return false;
+}
