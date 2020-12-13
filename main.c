@@ -6,6 +6,8 @@
 
 int main()
 {
+   	CurrentAccount *allAccounts = (CurrentAccount*)malloc(500 * sizeof(CurrentAccount));// alocar 500 contatos para agenda
+
     bool isActive = true;
     int option;
 
@@ -13,7 +15,7 @@ int main()
     {
         menu();
         scanf("%d", &option);
-        direct(option);
+        direct(option, allAccounts);
     }
  
 }

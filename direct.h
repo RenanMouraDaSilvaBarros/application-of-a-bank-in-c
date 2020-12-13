@@ -2,10 +2,11 @@
 #include "accountManagment.h"
 
 
-void direct(int option){
+
+void direct(int option, CurrentAccount *allAccounts){
     switch(option){
         case 1:
-        openAccount();
+        openAccount(allAccounts);
             break;
         case 2:
             break;
@@ -16,6 +17,7 @@ void direct(int option){
         case 5:
             break;
         case 6:
+            accountsLists(allAccounts);
             break;
         case 7:
             break;

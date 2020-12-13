@@ -5,26 +5,34 @@
 #include "utils.h"
 
 
+int size = 0;
 
-
-
-void openAccount()
+void accountsLists(CurrentAccount *allAccounts)
 {
-    CurrentAccount *account  = (CurrentAccount *)malloc(sizeof(CurrentAccount));;
+    int i = 0;
+    clear();
+    
+    for (i; i < size; i++)
+        toString(allAccounts[i]);
+    
+}
+
+void openAccount(CurrentAccount *allAccounts)
+{
     printf("===============ABRIR CONTA===============\n");
+    printf("size: %d", size);
     printf("nome: ");
-    scanf("%s", account->name);
+    scanf("%s", allAccounts[size].name);
     printf("agencia: ");
-    scanf("%s", account->agency);
-    account->account= generateaAccount();
-    account->balance = 0;
-    clear();
-    pause();
-    clear();
-    toString(account);
-    pause();
-    clear();
+    scanf("%s", allAccounts[size].agency);
+
+    allAccounts[size].account = generateaAccount();
+    allAccounts[size].balance = 0;
+    size++;
+
+    //toString(allAccounts[size]);
+   //accountsLists();
+    
+
     getchar();
-
-
 }
