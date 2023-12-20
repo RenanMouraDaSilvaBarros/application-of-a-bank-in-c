@@ -1,6 +1,3 @@
-Claro, aqui está o exemplo do README em formato Markdown para o sistema bancário em C:
-
-```markdown
 # Sistema de Controle Bancário em C
 
 Este é um programa simples em C que simula operações bancárias básicas em uma conta corrente. Ele é executado no terminal e oferece as seguintes funcionalidades:
@@ -38,9 +35,6 @@ Exemplo:
 insira a opção: 1
 ```
 
-## Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias, adicionar novas funcionalidades ou corrigir bugs.
 
 ## Autores
 
