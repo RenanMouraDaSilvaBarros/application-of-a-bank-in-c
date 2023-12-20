@@ -46,9 +46,5 @@ Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias, adic
 
 Este programa foi desenvolvido por [Renan Moura Da Silva Barros] como parte de um projeto em C.
 
-## Licença
 
-Este projeto está sob a licença [especificar a licença utilizada, se houver].
 ```
-
-Lembre-se de substituir `[Seu Nome]` pelo seu nome ou pelo nome da equipe responsável pelo projeto, e incluir informações relevantes sobre a licença utilizada, se aplicável.
