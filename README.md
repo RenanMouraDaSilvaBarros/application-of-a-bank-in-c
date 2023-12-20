@@ -44,7 +44,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias, adic
 
 ## Autores
 
-Este programa foi desenvolvido por [Seu Nome] como parte de um projeto em C.
+Este programa foi desenvolvido por [Renan Moura Da Silva Barros] como parte de um projeto em C.
 
 ## Licença
 
