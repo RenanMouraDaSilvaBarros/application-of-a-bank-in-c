@@ -39,6 +39,3 @@ insira a opção: 1
 ## Autores
 
 Este programa foi desenvolvido por [Renan Moura Da Silva Barros] como parte de um projeto em C.
-
-
-```
